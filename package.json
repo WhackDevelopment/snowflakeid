@@ -1,0 +1,34 @@
+{
+    "name": "snowflakeid",
+    "version": "1.0.0",
+    "description": "generates unique 64-bit snowflake IDs inspired by Twitter and Discord IDs",
+    "main": "Snowflake.js",
+    "type": "module",
+    "scripts": {
+        "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+        "prettier": "npx prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/WhackDevelopment/snowflakeid.git"
+    },
+    "keywords": [
+        "snowflake",
+        "id",
+        "uuid",
+        "flakeid",
+        "snowflakeid",
+        "discord",
+        "twitter"
+    ],
+    "author": "WhackDevelopment",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/WhackDevelopment/snowflakeid/issues"
+    },
+    "homepage": "https://github.com/WhackDevelopment/snowflakeid#readme",
+    "devDependencies": {
+        "jest": "^29.5.0",
+        "prettier": "^2.8.7"
+    }
+}
