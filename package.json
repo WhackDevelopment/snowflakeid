@@ -1,5 +1,5 @@
 {
-    "name": "snowflakeid",
+    "name": "@whackdevelopment/snowflakeid",
     "version": "1.0.0",
     "description": "generates unique 64-bit snowflake IDs inspired by Twitter and Discord IDs",
     "main": "Snowflake.js",
