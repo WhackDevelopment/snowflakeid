@@ -21,7 +21,9 @@
 
 # NodeJS SnowflakeIds
 
-## Installation `npm install @whackdevelopment/snowflakeid`
+## Installation
+
+> npm install @whackdevelopment/snowflakeid
 
 ### generates unique 64-bit snowflake IDs inspired by Twitter and Discord IDs
 

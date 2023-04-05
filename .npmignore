@@ -17,3 +17,6 @@ tests/
 # Editor directories and files
 .vscode/
 internal.js
+
+.prettierrc
+.prettierignore

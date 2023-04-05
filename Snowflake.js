@@ -3,8 +3,8 @@
  */
 export class SnowflakeGenerator {
     // Define some constants
-    // static EPOCH = 1627833600000; // epoch time in milliseconds (set to 2021-08-01 00:00:00 UTC)
-    static EPOCH = (new Date().getFullYear() - 1966) * 1000 * 60 * 60 * 24 * 30 * 12;
+    static EPOCH = 1627833600000; // epoch time in milliseconds (set to 2021-08-01 00:00:00 UTC)
+    // static EPOCH = (new Date().getFullYear() - 1966) * 1000 * 60 * 60 * 24 * 30 * 12;
     static SEQUENCE_BITS = 12; // number of bits reserved for the sequence number
     static MACHINE_BITS = 10; // number of bits reserved for the machine ID
     static MAX_SEQUENCE = 2 ** SnowflakeGenerator.SEQUENCE_BITS - 1; // maximum sequence number
@@ -123,10 +123,9 @@ export class Snowflake extends String {
      */
     extractTimeOffset() {
         const binary = this.toString(2).padStart(64, '0'); // Convert the Snowflake string to binary and pad with zeroes to 64 bits
-        //const offsetBinary = binary.substring(52, 64); // Extract the bits from 52 to 64, which represent the time offset
-        //let offset = parseInt(offsetBinary, 2); // Convert the binary time offset to a number
-        // return offset; // If the offset is not a number, return 0; otherwise, return the offset
-        return parseInt(binary.substring(42, 52), 2);
+        const offsetBinary = binary.substring(52, 64); // Extract the bits from 52 to 64, which represent the time offset
+        let offset = parseInt(offsetBinary, 2); // Convert the binary time offset to a number
+        return offset; // If the offset is not a number, return 0; otherwise, return the offset
     }
 
     /**
