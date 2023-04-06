@@ -40,13 +40,13 @@
 #### Common NodeJS
 
 ```js
-const { Snowflake, SnowflakeGenerator } = require('snowflakeid'); /* nodejs only */
+const { Snowflake, SnowflakeGenerator } = require('@whackdevelopment/snowflakeid'); /* nodejs only */
 ```
 
 #### NodeJS ES Module
 
 ```js
-import { Snowflake, SnowflakeGenerator } from 'snowflakeid';
+import { Snowflake, SnowflakeGenerator } from '@whackdevelopment/snowflakeid';
 ```
 
 ---
